@@ -79,19 +79,21 @@ const boxAppear = css` // 각 퍼퓸 박스 등장 시 공통 애니메이션 �
 `; // boxAppear 끝
 
 
-/* 각각 박스별 지연 시간 (조정됨) */
-export const box1Animate = css` // 첫 번째 박스 애니메이션 스타일
-  ${boxAppear}; // 공통 박스 애니메이션 적용
-  animation-delay: 0.2s; // 0.2초 지연 후 시작합니다.
-`; // box1Animate 끝
-export const box2Animate = css` // 두 번째 박스 애니메이션 스타일
+export const box1Animate = css`
   ${boxAppear};
-  animation-delay: 1.93s; // 1.93초 지연 후 시작 (박스1 끝난 뒤 대기 포함)
-`; // box2Animate 끝
-export const box3Animate = css` // 세 번째 박스 애니메이션 스타일
+  animation-delay: 0.2s;
+`;
+
+export const box2Animate = css`
   ${boxAppear};
-  animation-delay: 3.66s; // 3.66초 지연 후 시작 (전체 박스 최대 지연)
-`; // box3Animate 끝
+  animation-delay: 1.93s;
+`;
+
+export const box3Animate = css`
+  ${boxAppear};
+  animation-delay: 3.66s;
+`;
+
 
 
 /* 각각의 퍼퓸 박스 스타일 */
