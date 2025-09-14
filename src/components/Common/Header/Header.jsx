@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div css={s.header}>  
-      <div onClick={() => onClickNavHandler("/")}>웹 서비스 이름</div>
+      <div onClick={() => onClickNavHandler("/")}>Auria</div>
       <div>
         <ul>
           <li
