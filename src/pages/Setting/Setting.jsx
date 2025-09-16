@@ -1,49 +1,61 @@
 /** @jsxImportSource @emotion/react */
+import { useState } from "react";
 import * as s from "./styles";
-
+import Profile from "../../components/Setting/Profile/Profile";
+import Signout from "../../components/Setting/Signout/Signout";
+import Preference from "../../components/Setting/Preference/Preference";
+import Home from "../Home/Home";
 import { useNavigate } from "react-router-dom";
+import MyPage from "../MyPage/MyPage";
 
-function Settings() {
+
+function Setting() {
+  const [active, setActive] = useState("profile"); // 기본
   const navigate = useNavigate();
 
-  const onClickNavHandler = (path) => {
-    navigate(path);
+  const renderComponent = () => {
+    switch (active) {
+      case "home":
+        return <Home />;
+      case "profile":
+        return <Profile />;
+      case "myPage":
+        return <MyPage />;
+      case "preference":
+        return <Preference />;
+      case "signout":
+        return <Signout />;
+      default:
+        return <Profile />;
+    }
   };
+
+  // 홈은 컴포넌트 단위 X, 페이지 자체를 전환
+  const homeOnClickHandler = () => {
+    setActive("home");
+    navigate("/");
+  }
+
+  // 마이페이지는 컴포넌트 단위 X, 페이지 자체를 전환
+  const mypageOnClickHandler = () => {
+    setActive("myPage");
+    navigate("/myPage");
+  }
 
   return (
     <div css={s.container}>
-      <button
-        css={s.button}
-        onClick={() => onClickNavHandler("/detail")}
-      >
-        추천 향수를 선택했을 때 상세 화면으로 넘어갑니다.
-      </button>
-      <button 
-        css={s.button}
-        onClick={() => onClickNavHandler("/recommendation")}
-      >
-        제미나이와 대화 후 향수 추천하는 화면으로 넘어갑니다. 
-      </button>
-      <button 
-        css={s.button}
-        onClick={() => onClickNavHandler("/preference")}
-      >
-        회원 가입 후 선호 향 선택 화면으로 넘어갑니다.
-      </button>
-      <button
-        css={s.button}
-        onClick={() => onClickNavHandler("/signin")}
-      >
-        로그인 화면으로 넘어갑니다.
-      </button>
-      <button
-        css={s.button}
-        onClick={() => onClickNavHandler("/signup")}
-      >
-        회원가입 화면으로 넘어갑니다.  
-      </button>
+      <div css={s.side}>
+        <div onClick={homeOnClickHandler}>홈</div>
+        <div onClick={() => setActive("profile")}>프로필</div>
+        <div onClick={mypageOnClickHandler}>마이페이지</div>
+        <div onClick={() => setActive("preference")}>취향 설정 변경</div>
+        <div onClick={() => setActive("signout")}>로그아웃</div>
+      </div>
+      <div css={s.component}>
+        {renderComponent()}
+      </div>
     </div>
   );
 };
 
-export default Settings;
+export default Setting;
