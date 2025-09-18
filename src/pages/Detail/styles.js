@@ -32,7 +32,7 @@ export const header = css`
 
   & > button:nth-of-type(2) {
     display: flex;
-    background-color: #978e8eff;
+    background-color: #978E8E;
     color: white;
     font-size: 15px;
     font-weight: 500;

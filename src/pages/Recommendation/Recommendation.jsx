@@ -10,7 +10,7 @@ function Recommendation() {
     <div>
       <div css={s.header}>
         <span class="main-logo">Auria</span>
-         <button class="home-btn" onClick={() => navigate("/")}>Home 화면으로 가기</button>
+        <button class="home-btn" onClick={() => navigate("/")}>Home 화면으로 가기</button>
       </div>
       <div css={s.body}>
         <div css={s.main_container}>
@@ -21,21 +21,18 @@ function Recommendation() {
             <div css={s.grid_container}></div>
           </div>
 
-          
-          
           <div css={s.popupContainer}>
-            <div css={s.messageBox}>
-              
-              </div>
-              
-                <div css={s.messageInputContainer}>
-                  <input
-                    css={s.messageInput}
-                    type="text"
-                    placeholder="나만의 향수를 만들어보세요"
-                  />
-                  <button css={s.sendButton}>
-                     <svg
+            <div css={s.messageBox}>  
+            </div>
+
+            <div css={s.messageInputContainer}>
+              <input
+                css={s.messageInput}
+                type="text"
+                placeholder="나만의 향수를 만들어보세요"
+              />
+              <button css={s.sendButton}>
+                <svg
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
@@ -44,16 +41,12 @@ function Recommendation() {
                 >
                   <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
                 </svg>
-                  </button>
-           
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-     
-     
-    </div>
-    </div>
-   
   );
 };
 
