@@ -9,7 +9,7 @@ export const container = css`
 
 export const side = css`
   flex: 1;
-  background-color: #8a7e74ff;
+  background-color: #8A7E74;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -50,7 +50,7 @@ export const main_container = css` //body안의 추천박스 + 팝업
 `
 
 export const rec_container = css`
- 
+
   width: 65%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -64,12 +64,12 @@ export const rec_container = css`
 `
 
 export const grid_container = css`
-  background-color:#DED3CA ;
+  background-color: #DED3CA ;
   border-radius: 8px ;
   border: 1px solid #dbdbdb;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
- 
+
   &:hover {
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
@@ -79,18 +79,18 @@ export const grid_container = css`
 
 
 export const popupContainer = css` //사용 가능 공간
- width: 30%;
- display: flex;
- flex-direction: column;
- border-left: 1px solid #dbdbdb;
- justify-content: space-between;
-  align-items: center;
-  margin-left: 16px;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: #F8F4F0;
-  border-radius: 12px;
- 
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #dbdbdb;
+  justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #F8F4F0;
+    border-radius: 12px;
+  
 `
 
 export const messageBox = css` //채팅 표시 공간
