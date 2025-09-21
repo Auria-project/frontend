@@ -91,7 +91,7 @@ export const box = css`
   margin: 0;
   border: 1.5px solid #a68a7d;
   background: #fff9f7;
-  border-radius: 18px;
+  border-radius: 2vw;
   box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
@@ -137,29 +137,16 @@ export const boxDescription = css`
 export const largeBox = css`
   border: 1.5px solid #a68a7d;
   background: #fcfaf7;
-  border-radius: 24px;
-  height: 95%;
+  border-radius: 1.5vw;
+  height: 100%;
   width: 30vw;
   box-sizing: border-box;
-  padding: 4rem 3rem;
+  padding: 5vh 3vw;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   box-shadow: inset 0 0 15px #fffefc, 0 0 18px 2px rgba(166, 138, 125, 0.3);
   position: relative;
-`;
-
-export const welcomeBox = css`
-  font-family: "Didot", serif;
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #4b382a;
-  padding: 2rem;
-  border-radius: 20px;
-  background: #fcfaf7;
-  box-shadow: 0 0 18px 2px rgba(166, 138, 125, 0.3);
-  max-width: 90%;
-  margin: auto 0 2rem 0;
 `;
 
 /* 글자 순차 등장 */
@@ -176,19 +163,19 @@ export const charAnimate = (index) => css`
 export const chatContainer = css`
   flex: 1;
   overflow-y: auto;
-  padding: 1rem 0;
+  padding: 1vh 0;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1vh;
 `;
 
 export const chatMessage = css`
-  max-width: 80%;
-  padding: 0.9rem 1.2rem;
+  max-width: 70%;
+  padding: 1.8vh 1.5vw;
   border-radius: 20px;
   font-family: "Georgia", serif;
-  font-size: 1.15rem;
-  line-height: 1.4;
+  font-size: 2vh;
+  line-height: 1.5;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   word-break: break-word;
 `;
@@ -211,8 +198,8 @@ export const inputArea = css`
   position: sticky;
   bottom: 0;
   display: flex;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 1vh;
+  padding: 2vh 0;
   background-color: #fcfaf7;
   border-top: 1.5px solid #a68a7d;
   box-sizing: border-box;
@@ -223,10 +210,10 @@ export const inputArea = css`
 
 export const inputField = css`
   flex: 1;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
+  padding: 1.8vh 1.5vw;
+  font-size: 1vw;
   border: 1.5px solid #a68a7d;
-  border-radius: 24px 0 0 24px;
+  border-radius: 1.8vw 0 0 1.8vw;
   outline: none;
   font-family: "Didot", serif;
   color: #3d2c2f;
@@ -237,14 +224,17 @@ export const inputField = css`
 `;
 
 export const sendButton = css`
-  flex: 0 0 80px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #a68a7d;
   border: none;
-  border-radius: 0 24px 24px 0;
+  border-radius: 0 1.8vw 1.8vw 0;
   color: #fcfaf7;
   font-family: "Didot", serif;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
 

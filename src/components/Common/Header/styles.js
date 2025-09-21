@@ -19,7 +19,7 @@ export const header = css`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 2vh;
 
       & > li {
         color: #333;
@@ -42,8 +42,8 @@ export const logoContainer = css`
 `;
 
 export const logoImage = css`
-  height: 200px;
   width: auto;
+  height: 20vh;
 `;
 
 export const headerIcon = css`
@@ -55,11 +55,11 @@ export const headerIcon = css`
 `;
 
 export const loginButton = css`
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 600;
   cursor: pointer;
   color: #4b382a;
-  padding: 0.3rem 0.8rem;
+  padding: 1vh 1vw;
   border: 1.5px solid #a68a7d;
   border-radius: 20px;
   user-select: none;
@@ -72,11 +72,11 @@ export const loginButton = css`
 `;
 
 export const signupButton = css`
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 600;
   cursor: pointer;
   color: #4b382a;
-  padding: 0.3rem 0.8rem;
+  padding: 1vh 1vw;
   border: 1.5px solid #4b382a;
   border-radius: 20px;
   user-select: none;

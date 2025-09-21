@@ -14,42 +14,46 @@ export const modalOverlay = css`
 `;
 
 export const modalContainer = css`
+  width: 25vw;
   background: linear-gradient(135deg, #fdf6ed 80%, #e3d6c8 100%);
-  border: none;
-  border-radius: 24px;
-  width: 350px;
-  padding: 3rem 2.2rem 2rem 2.2rem;
-  box-shadow: 0 8px 32px rgba(166, 138, 125, 0.18), 0 1px 3px #eaeaea;
-  font-family: "Didot", serif;
+  border-radius: 3vh;
+  padding: 3vh 3vw;
+  box-shadow: 0 15px 40px rgba(166, 138, 125, 0.25);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
   color: #4b382a;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  user-select: none;
+  position: relative;
 `;
 
 export const modalTitle = css`
-  font-size: 2.2rem;
+  font-size: 2vw;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 2rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  margin: 2vh 0 5vh 0;
+  font-style: normal;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #4b382a;
 `;
 
 export const inputFieldLogin = css`
   width: 100%;
-  padding: 0.85rem 1rem;
-  font-size: 1.07rem;
-  border: 1.5px solid #cfc2b0;
-  border-radius: 15px;
-  outline: none;
-  font-family: "Didot", serif;
-  color: #4b382a;
-  background: #f7f2ed;
-  margin-bottom: 1.15rem;
+  padding: 1.5vh 1.5vw;
+  margin-bottom: 1.5vh;
+  font-family: "Pretendard", Arial, sans-serif;
+  font-size: 1vw;
+  color: #2f2620;
+  border: 1.8px solid #a48f72;
+  border-radius: 1vw;
+  background-color: #fbf8f3;
   box-sizing: border-box;
-  transition: border 0.26s;
+  outline: none;
+  transition: border-color 0.3s ease;
 
   &:focus {
     border: 1.5px solid #ad9372;
@@ -60,15 +64,15 @@ export const inputFieldLogin = css`
 export const modalLoginButton = css`
   background: linear-gradient(90deg, #d6bb97 30%, #b79e7a 100%);
   color: #fff;
-  font-family: "Didot", serif;
-  font-weight: 700;
-  font-size: 1.15rem;
+  font-family: "Pretendard", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
   border: none;
-  border-radius: 17px;
-  padding: 0.72rem 0;
+  border-radius: 2vw;
+  padding: 1.5vh 0;
   cursor: pointer;
   box-shadow: 0 1px 8px rgba(166, 138, 125, 0.14);
-  margin-bottom: 1.05rem;
+  margin: 3vh 0 1vh 0;
   width: 100%;
   transition: background 0.19s;
 
@@ -78,23 +82,22 @@ export const modalLoginButton = css`
 `;
 
 export const googleButton = css`
+  background-color: #fff;
+  border: 1.8px solid #a68a7d;
+  border-radius: 2vw;
+  padding: 1.5vh 0;
+  font-family: "Pretendard", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #4b382a;
+  cursor: pointer;
+  margin: 1vh 0;
+  box-shadow: 0 3px 7px rgba(166, 138, 125, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.65rem;
-  background-color: #fff;
-  border: 1.5px solid #ad9372;
-  border-radius: 17px;
-  padding: 0.72rem 0;
-  font-family: "Didot", serif;
-  font-weight: 700;
-  font-size: 1.10rem;
-  color: #4b382a;
-  cursor: pointer;
-  box-shadow: 0 1px 7px rgba(166, 138, 125, 0.11);
-  width: 100%;
-  margin-bottom: 1.05rem;
-  transition: background 0.19s, box-shadow 0.19s;
+  gap: 0.75rem;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background: #f9efe2;
@@ -117,15 +120,14 @@ export const signupButton = css`
   background: #fff;
   color: #a68a7d;
   border: 1.5px solid #a68a7d;
-  border-radius: 17px;
-  font-family: "Didot", serif;
-  font-weight: 700;
-  font-size: 1.07rem;
-  padding: 0.72rem 0;
+  border-radius: 2vw;
+  font-family: "Pretendard", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  padding: 1.5vh 0;
   cursor: pointer;
   width: 100%;
-  margin-top: 0.2rem;
-  margin-bottom: 0.1rem;
+  margin: 1vh 0;
   transition: background 0.19s, color 0.19s;
 
   &:hover {

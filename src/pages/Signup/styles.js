@@ -15,10 +15,10 @@ export const modalOverlay = css`
 `;
 
 export const modalContainer = css`
-  width: 480px;
+  width: 30vw;
   background: linear-gradient(135deg, #fdf6ed 80%, #e3d6c8 100%);
-  border-radius: 28px;
-  padding: 2rem 2.6rem 3rem 2.6rem;
+  border-radius: 3vh;
+  padding: 3vh 3vw;
   box-shadow: 0 15px 40px rgba(166, 138, 125, 0.25);
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
     Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
@@ -47,7 +47,7 @@ export const closeButton = css`
   position: absolute;
   top: 16px;
   right: 20px;
-  font-size: 1.8rem;
+  font-size: 2.5vw;
   line-height: 1;
   font-weight: 900;
   border: none;
@@ -73,11 +73,10 @@ export const modalLogo = css`
 `;
 
 export const modalTitle = css`
-  font-size: 2.4rem;
+  font-size: 2vw;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 1rem;
-  letter-spacing: 0.04em;
+  margin: 5vh 0;
   font-style: normal;
   font-family: "Poppins", Arial, sans-serif;
   color: #4b382a;
@@ -85,13 +84,13 @@ export const modalTitle = css`
 
 export const inputUser = css`
   width: 100%;
-  padding: 0.9rem 1.3rem;
-  margin-bottom: 0.85rem;
+  padding: 1.5vh 1.5vw;
+  margin-bottom: 1.5vh;
   font-family: "Pretendard", Arial, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1vw;
   color: #2f2620;
   border: 1.8px solid #a48f72;
-  border-radius: 14px;
+  border-radius: 1vw;
   background-color: #fbf8f3;
   box-sizing: border-box;
   outline: none;
@@ -105,8 +104,8 @@ export const inputUser = css`
 
 export const errorText = css`
   color: #b54242;
-  font-size: 0.9rem;
-  margin: -0.4rem 0 1rem 0;
+  font-size: 0.8vw;
+  margin: -0.7vh 0 2.5vh 1vw;
   font-family: "Pretendard", Arial, sans-serif;
 `;
 
@@ -261,8 +260,8 @@ export const nextButton = css`
   color: #fcfaf7;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 700;
-  font-size: 1.15rem;
-  padding: 0.7rem 2.8rem;
+  font-size: 1vw;
+  padding: 1.5vh 1.5vw;
   cursor: pointer;
   border: none;
   border-radius: 28px;
@@ -294,14 +293,14 @@ export const submitButton = css`
 export const googleLoginButton = css`
   background-color: #fff;
   border: 1.8px solid #a68a7d;
-  border-radius: 28px;
-  padding: 0.65rem 1.1rem;
+  border-radius: 2vw;
+  padding: 1.5vh 0;
   font-family: "Pretendard", Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.08rem;
+  font-size: 1.2vw;
   color: #4b382a;
   cursor: pointer;
-  margin-top: 1.4rem;
+  margin-top: 1vh;
   box-shadow: 0 3px 7px rgba(166, 138, 125, 0.25);
   display: flex;
   align-items: center;
