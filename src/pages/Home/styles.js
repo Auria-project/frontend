@@ -1,6 +1,5 @@
 import { keyframes, css } from "@emotion/react";
 
-const HEADER_HEIGHT = "60px";
 
 /* Fade-in-up 애니메이션 */
 const fadeInUp = keyframes`
@@ -15,7 +14,7 @@ export const container = css`
   align-items: flex-start;
   gap: 2vw;
   width: 100vw;
-  height: calc(100vh - ${HEADER_HEIGHT});
+  height: 90vh;
   box-sizing: border-box;
   padding: 3vh 1vw;
   background-color: #ded3ca;
@@ -34,21 +33,21 @@ export const groupContainer = css`
   border-radius: 24px;
   box-sizing: border-box;
   width: 65vw;
-  height: 95%;
-  padding: 2.5rem 1vw;
+  height: 100%;
+  padding: 2.5vh 1vw;
   overflow: hidden;
 `;
 
 export const largeTitle = css`
   font-family: "Didot", serif;
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 700;
   color: #4b382a;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1vh;
 `;
 
 export const thumbnailsWrapper = css`
@@ -115,10 +114,10 @@ export const box = css`
 
 export const boxTitle = css`
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 0.12em;
-  margin: 3rem 0 1.5rem 0;
+  margin: 5vh 0;
   color: #4b382a;
   text-align: center;
   text-transform: uppercase;
