@@ -138,6 +138,7 @@ export default function Signup({ isOpen, onClose }) {
   const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({
+    fullName: "",
     username: "",
     nickname: "",
     email: "",
@@ -195,20 +196,22 @@ export default function Signup({ isOpen, onClose }) {
     const newErrors = {};
 
     if (step === 1) {
+      if (!form.fullName) {
+        newErrors.fullName = "이름을 입력해주세요.";
+        valid = false;
+      }
       if (!form.username) {
         newErrors.username = "아이디를 입력해주세요.";
         valid = false;
       } else if (EXISTING_IDS.includes(form.username)) {
-        newErrors.username =
-          "이미 사용중인 아이디 입니다.";
+        newErrors.username = "이미 사용중인 아이디 입니다.";
         valid = false;
       }
       if (!form.nickname) {
         newErrors.nickname = "닉네임을 입력해주세요.";
         valid = false;
       } else if (EXISTING_NICKNAMES.includes(form.nickname)) {
-        newErrors.nickname =
-          "이미 사용중인 닉네임 입니다.";
+        newErrors.nickname = "이미 사용중인 닉네임 입니다.";
         valid = false;
       }
       if (!form.email) {
@@ -244,6 +247,7 @@ export default function Signup({ isOpen, onClose }) {
         valid = false;
       }
     }
+
     if (step === 2) {
       if (!form.gender) {
         newErrors.gender = "성별을 선택해주세요.";
@@ -254,6 +258,7 @@ export default function Signup({ isOpen, onClose }) {
         valid = false;
       }
     }
+
     if (step >= 3) {
       const current = form.perfumePreferences[step] || [];
       if (current.length < 1) {
@@ -328,6 +333,19 @@ export default function Signup({ isOpen, onClose }) {
           <>
             {step === 1 && (
               <>
+                {/* 1. 유저 이름 */}
+                <input
+                  name="fullName"
+                  value={form.fullName}
+                  onChange={handleChange}
+                  placeholder="이름"
+                  css={s.inputUser}
+                  aria-invalid={!!errors.fullName}
+                  aria-describedby="error-fullName"
+                />
+                {errors.fullName && <p id="error-fullName" css={s.errorText}>{errors.fullName}</p>}
+
+                {/* 2. 유저 아이디 */}
                 <input
                   name="username"
                   value={form.username}
@@ -339,6 +357,7 @@ export default function Signup({ isOpen, onClose }) {
                 />
                 {errors.username && <p id="error-username" css={s.errorText}>{errors.username}</p>}
 
+                {/* 3. 유저 닉네임 */}
                 <input
                   name="nickname"
                   value={form.nickname}
@@ -350,6 +369,7 @@ export default function Signup({ isOpen, onClose }) {
                 />
                 {errors.nickname && <p id="error-nickname" css={s.errorText}>{errors.nickname}</p>}
 
+                {/* 4. 유저 이메일 */}
                 <input
                   name="email"
                   value={form.email}
@@ -361,6 +381,7 @@ export default function Signup({ isOpen, onClose }) {
                 />
                 {errors.email && <p id="error-email" css={s.errorText}>{errors.email}</p>}
 
+                {/* 5. 유저 비밀번호 */}
                 <input
                   type="password"
                   name="password"
@@ -374,6 +395,7 @@ export default function Signup({ isOpen, onClose }) {
                 />
                 {errors.password && <p id="error-password" css={s.errorText}>{errors.password}</p>}
 
+                {/* 6. 유저 비밀번호 확인 */}
                 <input
                   type="password"
                   name="confirmPassword"

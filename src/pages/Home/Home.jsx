@@ -34,6 +34,7 @@ export default function Home({ userName = "고객" }) {
     );
   };
 
+  // API 호출을 통해 AI 추천 받기
   const sendMessage = () => {
     const trimmed = input.trim();
     if (!trimmed) return;
@@ -43,16 +44,39 @@ export default function Home({ userName = "고객" }) {
     ]);
     setInput("");
 
-    setTimeout(() => {
+    // 사용자 메세지 전달 및 응답 받기
+    fetch("http://localhost:8080/api/chat/recommend", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(trimmed),
+    })
+    .then((response) => response.text())
+    .then((data) => {
       setChatLog((log) => [
         ...log,
         {
           sender: "bot",
-          text: `"${trimmed}" 향수, 정말 좋은 선택입니다!`,
+          text: `"${trimmed}" 향수, 정말 좋은 선택입니다! ${data}`,
           animatedDone: false,
         },
       ]);
-    }, 800);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
+    // setTimeout(() => {
+    //   setChatLog((log) => [
+    //     ...log,
+    //     {
+    //       sender: "bot",
+    //       text: `"${trimmed}" 향수, 정말 좋은 선택입니다!`,
+    //       animatedDone: false,
+    //     },
+    //   ]);
+    // }, 800);
   };
 
   return (
