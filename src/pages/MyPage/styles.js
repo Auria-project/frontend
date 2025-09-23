@@ -1,38 +1,23 @@
 import { css } from "@emotion/react";
 
-export const header = css`
-  display: flex;
-  width: 100%;
-  height: 60px;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  background-color: transparent;
-  
-`
-
 export const body = css`
-  min-height: 85vh;
+  height: 90vh;
   background-color: #DED3CA;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
- 
-
 `
+
 export const gridContainer = css`
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 2vw;
   width: 100%;
-  max-width: 1200px;
+  max-width: 80vw;
   flex-wrap: nowrap;
   overflow-x: auto;
-  scroll-snap-type: x mandatory; /* 가로(x축) 스크롤 스냅을 강제로 적용 */
-  scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
-
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 `
 
 export const mainProductCard = css`
@@ -40,14 +25,14 @@ export const mainProductCard = css`
   flex-direction: column;
   flex-shrink: 0;
   width: 100%;
-  max-width: 300px;
+  max-width: 20vw;
   background-color: #FCF9F5;
   border: 1px solid #dbdbdb;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  border-radius: 12px;
+  border-radius: 1vw;
   overflow-x: auto;
-  scroll-snap-align: center; /* 카드 중앙에 스크롤이 맞춰지도록 설정 */
+  scroll-snap-align: center;
 
   & :hover {
     transform: translateY(-3px); 
@@ -70,7 +55,7 @@ export const productImg = css`
     max-width: 100%;
     max-height: 100%;
     display: block;
-    object-fit: contain; //*
+    object-fit: contain;
   }
 `
 
@@ -132,7 +117,7 @@ export const button = css`
   border-radius: 8px;
 
   & :hover {
-    background-color: #E6DCD1; /* 배경과 잘 어울리는 부드러운 호버 색상 */
+    background-color: #E6DCD1;
     color: #333;
     border-color: #B4A99F;
   }
