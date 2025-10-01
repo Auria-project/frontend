@@ -79,7 +79,7 @@ function Preference() {
           css={s.nextBtn(selected.length >= 3)}
           onClick={() => navigate("/")}
         >
-          다음
+          저장
         </button>
     </div>
   );

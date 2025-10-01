@@ -2,15 +2,13 @@ import { css } from "@emotion/react";
 
 export const container = css`
   flex: 1;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #CABBAF;
 `;
 
 export const header = css`
   padding: 30px 70px;
-
+  background-color: #CABBAF;
 
   & > p {
     font-size: 20px;
@@ -22,7 +20,7 @@ export const body = css`
   display: grid;
   padding: 0 100px;
   grid-template-columns: repeat(8, 1fr);
-  gap: 30px;
+  gap: 40px;
   justify-items: center;
   margin-top: 50px;
 `;
@@ -44,7 +42,7 @@ export const toggle = (isSelected) => css`
 
   & > span {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: px;
   }
 `;
 

@@ -20,8 +20,8 @@ export const header = css`
 
 export const body = css`
   display: grid;
-  padding: 0 100px;
-  grid-template-columns: repeat(8, 1fr);
+  padding: 0 80px;
+  grid-template-columns: repeat(7, 1fr);
   gap: 30px;
   justify-items: center;
   margin-top: 50px;

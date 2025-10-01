@@ -8,13 +8,14 @@ import Preference from "../../pages/Preference/Preference";
 import Signin from "../../pages/Signin/Signin";
 import Signup from "../../pages/Signup/Signup";
 import Header from "../../components/Common/Header/Header";
+import Test from "../../pages/Test/Test";
 
 
 function MainRouter() {
   const location = useLocation();
 
   // 임시로 Header을 포함할 화면 지정
-  const headerPaths = ["/", "/myPage", "/setting"]
+  const headerPaths = ["/", "/myPage", "/test"]
 
   return (
     <>
@@ -29,6 +30,7 @@ function MainRouter() {
         <Route path="/preference" element={<Preference />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </>
   );
