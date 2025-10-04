@@ -5,10 +5,9 @@ import Setting from "../../pages/Setting/Setting";
 import Detail from "../../pages/Detail/Detail";
 import Recommendation from "../../pages/Recommendation/Recommendation";
 import Preference from "../../pages/Preference/Preference";
-import Signin from "../../pages/Signin/Signin";
-import Signup from "../../pages/Signup/Signup";
 import Header from "../../components/Common/Header/Header";
 import Test from "../../pages/Test/Test";
+import AuthRouter from "../AuthRouter/AuthRouter";
 
 
 function MainRouter() {
@@ -28,8 +27,7 @@ function MainRouter() {
         <Route path="/detail" element={<Detail />} />
         <Route path="/recommendation" element={<Recommendation />} />
         <Route path="/preference" element={<Preference />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/auth/*" element={<AuthRouter />} />
         <Route path="/test" element={<Test />} />
       </Routes>
     </>
