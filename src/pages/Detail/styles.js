@@ -10,7 +10,7 @@ export const container = css`
 
 export const header = css`
   width: 100vw;
-  height: 70px;
+  height: 7vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

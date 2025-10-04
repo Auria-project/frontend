@@ -12,7 +12,7 @@ export const gridContainer = css`
   display: flex;
   justify-content: flex-start;
   gap: 2vw;
-  width: 100%;
+  width: 100vw;
   max-width: 80vw;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -24,7 +24,7 @@ export const mainProductCard = css`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  width: 100%;
+  width: 100vw;
   max-width: 20vw;
   background-color: #FCF9F5;
   border: 1px solid #dbdbdb;
@@ -41,9 +41,9 @@ export const mainProductCard = css`
 `
 
 export const productImg = css`
-  height: 300px;
+  height: 37vh;
   padding: 20px 20px 0;
-  background-color: #F8F4F0;
+  background-color:#F8F4F0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,9 +51,10 @@ export const productImg = css`
   border-radius: 8px;
   position: relative; //* 
 
+
   & .img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     display: block;
     object-fit: contain;
   }

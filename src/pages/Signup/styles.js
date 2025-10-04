@@ -191,8 +191,8 @@ export const optionsContainer = css`
 
 export const checkbox = css`
   appearance: none;
-  width: 24px;
-  height: 24px;
+  width: 1.6vw;
+  height: 2.5vh;
   border: 1.6px solid #a68a7d;
   border-radius: 10px;
   cursor: pointer;
@@ -325,7 +325,7 @@ export const googleIcon = css`
 
 export const summaryContainer = css`
   margin-top: 1.6rem;
-  max-height: 300px;
+  max-height: 38vh;
   overflow-y: auto;
   background: #fcf7ed;
   border: 1.5px solid #e1dbc7;
@@ -340,7 +340,7 @@ export const summaryContainer = css`
   position: relative;
 
   &::-webkit-scrollbar {
-    width: 11px;
+    width: 0.9vw;
     background: #fdf5e6;
     border-radius: 15px;
   }

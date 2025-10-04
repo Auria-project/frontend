@@ -2,8 +2,8 @@ import { css } from "@emotion/react";
 
 export const header = css`
   display: flex;
-  width: 100%;
-  height: 60px;
+  width: 100vw;
+  height: 7vh;
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
   justify-content: space-between;
@@ -42,7 +42,7 @@ export const body = css`
 
 export const main_container = css` //body안의 추천박스 + 팝업
   display: flex;
-  width: 90%;
+  width: 90vw;
   max-width: 1500px;
   height: 80vh;
   
@@ -51,7 +51,7 @@ export const main_container = css` //body안의 추천박스 + 팝업
 
 export const rec_container = css`
 
-  width: 65%;
+  width: 65vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -79,17 +79,17 @@ export const grid_container = css`
 
 
 export const popupContainer = css` //사용 가능 공간
-  width: 30%;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   border-left: 1px solid #dbdbdb;
   justify-content: space-between;
-    align-items: center;
-    margin-left: 16px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #F8F4F0;
-    border-radius: 12px;
+  align-items: center;
+  margin-left: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #F8F4F0;
+  border-radius: 12px;
   
 `
 
@@ -105,7 +105,7 @@ export const messageInputContainer = css` //채팅 표시영역
   display: flex;       
   align-items: center;  
   width: 100%;
-  height: 45px;
+  height: 5.5vh;
   border-radius: 12px;
   background-color: #fff;
   margin: 10px 0 0;
@@ -131,8 +131,8 @@ export const messageInput = css` //채팅 필드부분
 `;
 
 export const sendButton = css`
-  width: 40px;    // 버튼 너비 고정
-  height: 35px;   // 버튼 높이 고정
+  width: 3.5vw;    // 버튼 너비 고정
+  height: 2vh;   // 버튼 높이 고정
   display: flex;
   justify-content: center;
   align-items: center;

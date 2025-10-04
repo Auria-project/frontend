@@ -242,3 +242,142 @@ export const sendButton = css`
     background-color: #9f8550;
   }
 `;
+
+export const popup_overlay = css`
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 90vh;
+ 
+  background-color: rgba(0,0,0,0.4);
+
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+
+`
+
+export const content = css`
+  background-color: #fff;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 24px 32px;
+  position: relative;
+  overflow-y: auto;
+  box-shadow: 0 8px 26px rgb(115 93 78 / 0.3);
+  user-select:none;
+  border-radius: 20px;
+  position: relative;
+  
+  border: 2px solid blue; /* 디버그용! */
+`
+
+export const top_perfume_card = css`
+  
+  margin-bottom: 20px;
+  text-align: center;
+  
+`
+
+export const topPerfumeCardImg = css`
+  
+  width: 10vw;
+  opacity: 0.7;
+  height: auto;
+  margin-bottom: 12px;
+
+`
+
+export const seasonCardGrid = css`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 18px;
+`
+
+export const seasonCard = css`
+  background: #f7f0e7;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgb(115 93 78 / 0.4);
+  }
+`;
+
+export const title = css`
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #9c8a7a;
+  margin-bottom: 8px;
+`
+
+export const subtitle = css`
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #735d4e;
+  margin-bottom: 10px;
+`
+
+export const details = css`
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #9c8a7a;
+
+`
+export const btn = css`
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px; 
+`
+
+export const closeBtn = css`
+  
+  top: 16px;
+  right: 16px;
+  font-size: 1rem;
+  border: none ;
+  background: transparent;
+  cursor: pointer;
+  color: #735d4e;
+  user-select: none;
+  line-height: 1;
+  padding: 0 3px;
+  transition: color 0.3s ease;
+  z-index: 1000;
+  
+
+  &:hover {
+    color: #9c8a7a;
+  }
+`
+
+export const applyBtn = css`
+  font-family: 'Noto Sans', 'Apple SD Gothic Neo', Arial, sans-serif;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  top: 16px;
+  right: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 0 3px;
+  transition: color 0.3s ease;
+  z-index: 100;
+  background-color: #dbcfc5;
+  color: #6f6051;
+  padding: 5px;
+  
+  
+
+  &:hover {
+    color:#8d7563;
+  }
+`
+

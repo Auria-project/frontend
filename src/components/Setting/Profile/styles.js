@@ -10,8 +10,8 @@ export const container = css`
 export const profile = css`
   display: flex;
   position: absolute;
-  width: 300px;
-  height: 550px;
+  width: 20vw;
+  height: 62vh;
   top: 15vh;
   left: 22vw;
   border: 1px solid #000;
@@ -23,8 +23,8 @@ export const profile = css`
 
   // 프로필 사진 부분
   & > div:nth-of-type(1) {
-    width: 200px;
-    height: 200px;
+    width: 12vw;
+    height: 20vh;
     border: 1px solid #000;
     border-radius: 50%;
     box-sizing: border-box;
@@ -68,8 +68,8 @@ export const profile = css`
 export const writeBox = css`
   display: flex;
   position: absolute;
-  width: 700px;
-  height: 550px;
+  width: 50vw;
+  height: 62vh;
   top: 15vh;
   right: 5vw;
   border: 1px solid #000;

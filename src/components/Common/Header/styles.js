@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 
 export const header = css`
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;

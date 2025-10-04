@@ -28,8 +28,8 @@ export const body = css`
 `;
 
 export const toggle = (isSelected) => css`
-  width: 100px;
-  height: 100px;
+  width: 7vw;
+  height: 11vh;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
