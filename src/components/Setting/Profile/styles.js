@@ -15,7 +15,7 @@ export const profile = css`
   top: 15vh;
   left: 22vw;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 0.9vmin;
   box-sizing: border-box;
   background-color: white;
   align-items: center;
@@ -23,7 +23,7 @@ export const profile = css`
 
   // 프로필 사진 부분
   & > div:nth-of-type(1) {
-    width: 12vw;
+    width: 10vw;
     height: 20vh;
     border: 1px solid #000;
     border-radius: 50%;
@@ -31,7 +31,7 @@ export const profile = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 2.6vh 0;
 
     & > div {
       display: flex;
@@ -43,10 +43,10 @@ export const profile = css`
   // 카메라 모양
   & > div:nth-of-type(2) {
     position: absolute;
-    top: 200px;
-    right: 55px;
+    top: 18.5vh;
+    right: 2.85vw;
     background-color: #333;
-    padding: 8px;
+    padding: 0.55vw;
     border: 2px solid white;
     border-radius: 50%;
     box-sizing: border-box;
@@ -73,7 +73,7 @@ export const writeBox = css`
   top: 15vh;
   right: 5vw;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 0.9vmin;
   box-sizing: border-box;
   background-color: white;
   flex-direction: row;
@@ -83,10 +83,11 @@ export const writeBox = css`
     flex-direction: column;
     flex: 1;
     align-items: center;
+    
 
     & > li {
-      padding: 10px;
-      margin: 30px 0px;
+      padding: 0.52vw;
+       margin: 1.56vh 0;
 
       & > p {
         font-size: 15px;
@@ -94,11 +95,12 @@ export const writeBox = css`
       }
 
       & > input {
-        padding: 10px;
+        padding: 0.6vw;
         border: 1px solid #333;
-        border-radius: 5px;
+        border-radius: 0.6vmin;
         box-sizing: border-box;
         font-size: 15px;
+        
       }
     }
   }
@@ -110,8 +112,9 @@ export const writeBox = css`
     align-items: center;
 
     & > li {
-      padding: 10px;
-      margin: 30px 0px;
+      padding: 0.52vw;
+      margin: 1.56vh 0;
+      
 
       & > p {
         font-size: 15px;
@@ -119,9 +122,9 @@ export const writeBox = css`
       }
 
       & > input {
-        padding: 10px;
+        padding: 0.6vw;
         border: 1px solid #333;
-        border-radius: 5px;
+        border-radius: 0.6vmin;
         box-sizing: border-box;
         font-size: 15px;
       }
@@ -132,8 +135,8 @@ export const writeBox = css`
 // 성별 선택 버튼
 export const genderBtn = (isSelected) => css`
   display: inline-block;
-  padding: 7.5px 20px;
-  margin-right: 32.65px;
+  padding: 0.7vh 1.05vw;
+  margin-right: 2vw;
   border: 1px solid #333;
   border-radius: 5px;
   cursor: pointer;

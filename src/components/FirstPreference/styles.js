@@ -7,27 +7,27 @@ export const container = css`
 `;
 
 export const header = css`
-  padding: 30px 70px;
+  padding: 2vh 5vw;
   background-color: #CABBAF;
 
   & > p {
-    font-size: 20px;
+    font-size: 1.4vw;
     color: white;
   }
 `;
 
 export const body = css`
   display: grid;
-  padding: 0 100px;
+  padding: 0 7vw;
   grid-template-columns: repeat(8, 1fr);
-  gap: 40px;
+  gap: 3vw;
   justify-items: center;
-  margin-top: 50px;
+  margin-top: 4vh;
 `;
 
 export const toggle = (isSelected) => css`
-  width: 100px;
-  height: 100px;
+  width: 7vw;
+  height: 7vh;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -41,17 +41,17 @@ export const toggle = (isSelected) => css`
     : "2px solid transparent"};
 
   & > span {
-    font-size: 12px;
-    margin-top: px;
+    font-size: 0.9vw;
+    margin-top: 0.5vh;
   }
 `;
 
 export const nextBtn = (enabled) => css`
   position: absolute;
-  right: 40px;
-  bottom: 30px;
-  padding: 10px 20px;
-  border-radius: 10px;
+  right: 2.8vw;
+  bottom: 2vh;
+  padding: 0.7vh 1.4vw;
+  border-radius: 0.7vw;
   background-color: ${enabled ? "#222" : "transparent"};
   border: none;
   color: ${enabled ? "white" : "transparent"};

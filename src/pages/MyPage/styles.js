@@ -27,7 +27,7 @@ export const mainProductCard = css`
   width: 100vw;
   max-width: 20vw;
   background-color: #FCF9F5;
-  border: 1px solid #dbdbdb;
+  border: 0.1rem solid #dbdbdb;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   border-radius: 1vw;
@@ -37,6 +37,8 @@ export const mainProductCard = css`
   & :hover {
     transform: translateY(-3px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
+     
+
   }
 `
 
@@ -47,9 +49,11 @@ export const productImg = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #dbdbdb;
+  border-right: 0.1rem solid #dbdbdb;
   border-radius: 8px;
   position: relative; //* 
+  
+  
 
 
   & .img {

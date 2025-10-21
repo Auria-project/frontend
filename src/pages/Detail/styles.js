@@ -15,15 +15,16 @@ export const header = css`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 1.5vh;
   border-bottom: 1px solid #CABBAF;
   box-sizing: border-box;
+  
 
   & > button:nth-of-type(1) {
     display: flex;
     background-color: transparent;
     color: black;
-    font-size: 30px;
+    font-size: 2.8vmin;
     font-weight: 'bold';
     border: none;
     outline: none;
@@ -34,19 +35,22 @@ export const header = css`
     display: flex;
     background-color: #978E8E;
     color: white;
-    font-size: 15px;
+    font-size: 1.6vmin;
     font-weight: 500;
-    padding:8px 15px;
-    border-radius: 10px;
+    padding: 0.58vw 0.9vw;
+    border-radius: 1vmin;
     border: none;
     outline: none;
     cursor: pointer;
+        
+
   };
 
   & > p {
     font-family: cursive;
-    font-size: 20px;
+    font-size: 2.5vmin;
     font-weight: bold;
+    
   };
 `;
 
@@ -54,7 +58,8 @@ export const body = css`
   flex: 1;
   display: flex;
   flex-direction: row;
-  padding: 0 70px;
+  padding: 0 9vh;
+  
 `;
 
 export const perfume = css`
@@ -69,7 +74,7 @@ export const perfume = css`
     position: absolute;
     left: 0;
     background-color: white;
-    padding: 200px;
+    padding: 13.5vw;
     border-radius: 50%;
     z-index: 1;
   };
@@ -77,16 +82,18 @@ export const perfume = css`
   & > div:nth-of-type(2) {
     position: absolute;
     background-color: #DED3CA;
-    right: 70px;
-    padding: 20px 50px;
-    border-left: 3px solid #000;
+    right: 5vw;
+    padding: 1.9vw 3vw;
+    border-left:  0.2vw solid #000;
     z-index: 2;
 
+
     & > div {
-      padding: 20px 0 50px 0;
+      padding: 2vh 0 4.63vh 0;      
       font-family: 'Times New Roman', Times, serif;
-      font-size: 40px;
+      font-size: 2.3rem;
       font-weight: bold;
+
     }
 
     & > ul {
@@ -94,11 +101,13 @@ export const perfume = css`
 
       & > li {
         & > strong {
-          font-size: 15px;
+          font-size: 1.1rem;
+
         }
         & > p {
-          font-size: 12px;
-          margin: 5px 0 25px 0;
+          font-size: 0.8rem;
+          margin: 0.5vh 0 3vh 0;
+
         }
       }
     }
@@ -113,7 +122,8 @@ export const chatbot = css`
 
   & > div {
     background-color: white;
-    padding: 250px 150px;
-    border-radius: 30px;
+    padding: 28vh 12vw;
+    border-radius: 2rem;
+
   };
 `;

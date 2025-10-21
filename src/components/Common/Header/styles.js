@@ -1,14 +1,14 @@
 import { css } from "@emotion/react";
 
 export const header = css`
-  height: 10vh;
+  height: 7.5vh;
   width: 100vw;
   display: flex;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 0.15vh solid #dbdbdb;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 1.5vw;
 
   & > div {
     display: flex;
@@ -20,6 +20,7 @@ export const header = css`
       justify-content: center;
       align-items: center;
       gap: 2vh;
+
 
       & > li {
         color: #333;
@@ -50,20 +51,22 @@ export const headerIcon = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 1.5vw;
   box-sizing: border-box;
+
 `;
 
 export const loginButton = css`
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   color: #4b382a;
   padding: 1vh 1vw;
-  border: 1.5px solid #a68a7d;
-  border-radius: 20px;
+  border: 0.1rem solid #a68a7d;
+  border-radius: 2vw;
   user-select: none;
   transition: background-color 0.3s ease, color 0.3s ease;
+
 
   &:hover {
     background-color: #a68a7d;
@@ -72,13 +75,13 @@ export const loginButton = css`
 `;
 
 export const signupButton = css`
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   color: #4b382a;
   padding: 1vh 1vw;
-  border: 1.5px solid #4b382a;
-  border-radius: 20px;
+  border: 0.1rem solid #4b382a;
+  border-radius: 2vw;
   user-select: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 

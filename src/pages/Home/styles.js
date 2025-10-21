@@ -3,7 +3,7 @@ import { keyframes, css } from "@emotion/react";
 
 /* Fade-in-up 애니메이션 */
 const fadeInUp = keyframes`
-  0% { opacity: 0; transform: translateY(10px);}
+  0% { opacity: 0; transform: translateY(0.9vh);}
   100% { opacity: 1; transform: translateY(0);}
 `;
 
@@ -28,14 +28,15 @@ export const groupContainer = css`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  border: 1.5px solid #a68a7d;
+  border: 0.1rem solid #a68a7d;
   background: #f9f7f5;
-  border-radius: 24px;
+  border-radius: 1.25rem;
   box-sizing: border-box;
   width: 65vw;
   height: 100%;
-  padding: 2.5vh 1vw;
+  padding: 2.31vh 1vw;
   overflow: hidden;
+
 `;
 
 export const largeTitle = css`
@@ -89,7 +90,7 @@ export const box = css`
   max-width: 17vw;
   height: 60vh;
   margin: 0;
-  border: 1.5px solid #a68a7d;
+  border: 0.1rem solid #a68a7d;
   background: #fff9f7;
   border-radius: 2vw;
   box-sizing: border-box;
@@ -102,6 +103,7 @@ export const box = css`
               border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
               background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
 
   &:hover {
     transform: scale(1.07);
@@ -201,7 +203,7 @@ export const inputArea = css`
   gap: 1vh;
   padding: 2vh 0;
   background-color: #fcfaf7;
-  border-top: 1.5px solid #a68a7d;
+  border-top: 0.1rem solid #a68a7d;
   box-sizing: border-box;
   width: 100%;
   margin-top: auto;
@@ -212,7 +214,7 @@ export const inputField = css`
   flex: 1;
   padding: 1.8vh 1.5vw;
   font-size: 1vw;
-  border: 1.5px solid #a68a7d;
+  border: 0.1rem solid #a68a7d;
   border-radius: 1.8vw 0 0 1.8vw;
   outline: none;
   font-family: "Didot", serif;
@@ -262,21 +264,23 @@ export const content = css`
   background-color: #fff;
   max-width: 90vw;
   max-height: 90vh;
-  padding: 24px 32px;
+  padding: 1.5rem 2.2rem;
   position: relative;
   overflow-y: auto;
   box-shadow: 0 8px 26px rgb(115 93 78 / 0.3);
   user-select:none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   position: relative;
+
   
   border: 2px solid blue; /* 디버그용! */
 `
 
 export const top_perfume_card = css`
   
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-align: center;
+
   
 `
 
@@ -285,24 +289,32 @@ export const topPerfumeCardImg = css`
   width: 10vw;
   opacity: 0.7;
   height: auto;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+
 
 `
 
 export const seasonCardGrid = css`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 18px;
+  grid-gap: 1.5rem;
+
 `
 
 export const seasonCard = css`
   background: #f7f0e7;
-  padding: 16px;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 1.6;
   text-align: left;
+        
+
+
+
+
+
 
   &:hover {
     transform: translateY(-10px) scale(1.05);
@@ -314,14 +326,18 @@ export const title = css`
   font-size: 1.2rem;
   font-weight: 700;
   color: #9c8a7a;
-  margin-bottom: 8px;
+  margin-bottom: 0.5vw;
+  
+      
+
 `
 
 export const subtitle = css`
   font-size: 1.4rem;
   font-weight: 600;
   color: #735d4e;
-  margin-bottom: 10px;
+  margin-bottom: 0.5vw;
+  
 `
 
 export const details = css`
@@ -335,13 +351,13 @@ export const btn = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px; 
+  margin-bottom: 0.8vh; 
 `
 
 export const closeBtn = css`
   
-  top: 16px;
-  right: 16px;
+ 
+  
   font-size: 1rem;
   border: none ;
   background: transparent;
@@ -349,9 +365,10 @@ export const closeBtn = css`
   color: #735d4e;
   user-select: none;
   line-height: 1;
-  padding: 0 3px;
+  padding: 0.2vh 0.3vw;
   transition: color 0.3s ease;
   z-index: 1000;
+
   
 
   &:hover {
@@ -362,17 +379,16 @@ export const closeBtn = css`
 export const applyBtn = css`
   font-family: 'Noto Sans', 'Apple SD Gothic Neo', Arial, sans-serif;
   font-size: 1.1rem;
-  border-radius: 10px;
-  top: 16px;
-  right: 16px;
+  border-radius: 1.2vh;
   border: none;
   cursor: pointer;
-  padding: 0 3px;
+  padding: 0 0.3vw;
   transition: color 0.3s ease;
   z-index: 100;
   background-color: #dbcfc5;
   color: #6f6051;
-  padding: 5px;
+  padding: 0.7vh;
+
   
   
 
