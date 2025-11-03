@@ -17,7 +17,7 @@ export const container = css`
   height: 90vh;
   box-sizing: border-box;
   padding: 3vh 1vw;
-  background-color: #ded3ca;
+  background-color: #BBDCE5;
   font-family: "Didot", serif;
   color: #3d2c2f;
 `;
@@ -29,7 +29,7 @@ export const groupContainer = css`
   gap: 2rem;
   align-items: center;
   border: 0.1rem solid #a68a7d;
-  background: #f9f7f5;
+  background: white;
   border-radius: 1.25rem;
   box-sizing: border-box;
   width: 65vw;
@@ -91,7 +91,7 @@ export const box = css`
   height: 60vh;
   margin: 0;
   border: 0.1rem solid #a68a7d;
-  background: #fff9f7;
+  background: #EFECE3;
   border-radius: 2vw;
   box-sizing: border-box;
   cursor: pointer;
